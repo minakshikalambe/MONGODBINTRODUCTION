@@ -1,0 +1,577 @@
+Microsoft Windows [Version 10.0.22000.493]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>mono
+'mono' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HP>mongo
+MongoDB shell version v4.4.13
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("1e54520b-ac0b-496c-bb00-79d7536e1e7a") }
+MongoDB server version: 4.4.13
+---
+The server generated these startup warnings when booting:
+        2022-03-09T13:47:59.147+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB
+> db
+test
+> show collections
+> use assignment
+switched to db assignment
+> show collections
+moviesdata
+users
+> db.moviesdata.find({})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f107"), "id" : 2, "movie_name" : "Decline of Western Civilization, The", "movie_gener" : "Documentary|Musical", "production_year" : 1973, "budget" : "$2.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f108"), "id" : 3, "movie_name" : "Rock Star", "movie_gener" : "Comedy|Drama|Musical", "production_year" : 2008, "budget" : "$1.22" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f109"), "id" : 4, "movie_name" : "Just Between Friends", "movie_gener" : "Drama", "production_year" : 1998, "budget" : "$9.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10a"), "id" : 5, "movie_name" : "Burmese Harp, The (Biruma no tategoto)", "movie_gener" : "Drama|War", "production_year" : 2000, "budget" : "$1.58" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10c"), "id" : 7, "movie_name" : "Winning Team, The", "movie_gener" : "Drama|Romance", "production_year" : 1995, "budget" : "$1.61" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10d"), "id" : 8, "movie_name" : "Better Than Sex", "movie_gener" : "Comedy|Romance", "production_year" : 1994, "budget" : "$5.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10e"), "id" : 9, "movie_name" : "Exists", "movie_gener" : "Horror", "production_year" : 1993, "budget" : "$8.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10f"), "id" : 10, "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)", "movie_gener" : "Comedy|Drama", "production_year" : 1996, "budget" : "$9.55" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f111"), "id" : 12, "movie_name" : "Submarino", "movie_gener" : "Drama", "production_year" : 2012, "budget" : "$6.04" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f112"), "id" : 13, "movie_name" : "Blood River", "movie_gener" : "Horror|Thriller|Western", "production_year" : 2011, "budget" : "$3.95" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f113"), "id" : 14, "movie_name" : "Don't Look Back", "movie_gener" : "Documentary|Musical", "production_year" : 1987, "budget" : "$4.81" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f115"), "id" : 16, "movie_name" : "Dead Tired (Grosse Fatigue)", "movie_gener" : "Comedy", "production_year" : 1998, "budget" : "$9.36" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f118"), "id" : 19, "movie_name" : "Woodsman, The", "movie_gener" : "Drama", "production_year" : 1994, "budget" : "$2.30" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f119"), "id" : 20, "movie_name" : "Das Lied in mir", "movie_gener" : "Drama", "production_year" : 2002, "budget" : "$0.45" }
+Type "it" for more
+> db.moviesdata.find({},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f106"),
+        "movie_name" : "No Greater Love",
+        "production_year" : 2010
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f107"),
+        "movie_name" : "Decline of Western Civilization, The",
+        "production_year" : 1973
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f108"),
+        "movie_name" : "Rock Star",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f109"),
+        "movie_name" : "Just Between Friends",
+        "production_year" : 1998
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10a"),
+        "movie_name" : "Burmese Harp, The (Biruma no tategoto)",
+        "production_year" : 2000
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10b"),
+        "movie_name" : "Jug Face",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10c"),
+        "movie_name" : "Winning Team, The",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10d"),
+        "movie_name" : "Better Than Sex",
+        "production_year" : 1994
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10e"),
+        "movie_name" : "Exists",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10f"),
+        "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)",
+        "production_year" : 1996
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f110"),
+        "movie_name" : "End of Poverty, The",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f111"),
+        "movie_name" : "Submarino",
+        "production_year" : 2012
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f112"),
+        "movie_name" : "Blood River",
+        "production_year" : 2011
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f113"),
+        "movie_name" : "Don't Look Back",
+        "production_year" : 1987
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f114"),
+        "movie_name" : "Jim Jefferies: BARE",
+        "production_year" : 2010
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f115"),
+        "movie_name" : "Dead Tired (Grosse Fatigue)",
+        "production_year" : 1998
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f116"),
+        "movie_name" : "Armed and Dangerous",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f117"),
+        "movie_name" : "Prodigal, The",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f118"),
+        "movie_name" : "Woodsman, The",
+        "production_year" : 1994
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f119"),
+        "movie_name" : "Das Lied in mir",
+        "production_year" : 2002
+}
+Type "it" for more
+> db.moviesdata.find({movie_name:"Prodidgal"})
+> da.moviesdata.find({movie_name:"Das Lied in mir"})
+uncaught exception: ReferenceError: da is not defined :
+@(shell):1:1
+> db.moviesdata.find({movie_name:"Das Lied in mir"})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f119"), "id" : 20, "movie_name" : "Das Lied in mir", "movie_gener" : "Drama", "production_year" : 2002, "budget" : "$0.45" }
+> db.movies.find({movie_name:{$not:{$eq:"Das Lied in mir"}}}).pretty()
+> db.moviesdata.find({movie_name:{$not:{$eq:"Das Lied in mir"}}}).pretty()
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f106"),
+        "id" : 1,
+        "movie_name" : "No Greater Love",
+        "movie_gener" : "Drama|Romance",
+        "production_year" : 2010,
+        "budget" : "$8.17"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f107"),
+        "id" : 2,
+        "movie_name" : "Decline of Western Civilization, The",
+        "movie_gener" : "Documentary|Musical",
+        "production_year" : 1973,
+        "budget" : "$2.07"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f108"),
+        "id" : 3,
+        "movie_name" : "Rock Star",
+        "movie_gener" : "Comedy|Drama|Musical",
+        "production_year" : 2008,
+        "budget" : "$1.22"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f109"),
+        "id" : 4,
+        "movie_name" : "Just Between Friends",
+        "movie_gener" : "Drama",
+        "production_year" : 1998,
+        "budget" : "$9.37"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10a"),
+        "id" : 5,
+        "movie_name" : "Burmese Harp, The (Biruma no tategoto)",
+        "movie_gener" : "Drama|War",
+        "production_year" : 2000,
+        "budget" : "$1.58"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10b"),
+        "id" : 6,
+        "movie_name" : "Jug Face",
+        "movie_gener" : "Horror",
+        "production_year" : 2008,
+        "budget" : "$5.25"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10c"),
+        "id" : 7,
+        "movie_name" : "Winning Team, The",
+        "movie_gener" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : "$1.61"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10d"),
+        "id" : 8,
+        "movie_name" : "Better Than Sex",
+        "movie_gener" : "Comedy|Romance",
+        "production_year" : 1994,
+        "budget" : "$5.37"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10e"),
+        "id" : 9,
+        "movie_name" : "Exists",
+        "movie_gener" : "Horror",
+        "production_year" : 1993,
+        "budget" : "$8.07"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f10f"),
+        "id" : 10,
+        "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)",
+        "movie_gener" : "Comedy|Drama",
+        "production_year" : 1996,
+        "budget" : "$9.55"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f110"),
+        "id" : 11,
+        "movie_name" : "End of Poverty, The",
+        "movie_gener" : "Documentary",
+        "production_year" : 2008,
+        "budget" : "$7.06"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f111"),
+        "id" : 12,
+        "movie_name" : "Submarino",
+        "movie_gener" : "Drama",
+        "production_year" : 2012,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f112"),
+        "id" : 13,
+        "movie_name" : "Blood River",
+        "movie_gener" : "Horror|Thriller|Western",
+        "production_year" : 2011,
+        "budget" : "$3.95"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f113"),
+        "id" : 14,
+        "movie_name" : "Don't Look Back",
+        "movie_gener" : "Documentary|Musical",
+        "production_year" : 1987,
+        "budget" : "$4.81"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f114"),
+        "id" : 15,
+        "movie_name" : "Jim Jefferies: BARE",
+        "movie_gener" : "Comedy",
+        "production_year" : 2010,
+        "budget" : "$5.59"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f115"),
+        "id" : 16,
+        "movie_name" : "Dead Tired (Grosse Fatigue)",
+        "movie_gener" : "Comedy",
+        "production_year" : 1998,
+        "budget" : "$9.36"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f116"),
+        "id" : 17,
+        "movie_name" : "Armed and Dangerous",
+        "movie_gener" : "Comedy|Crime",
+        "production_year" : 2004,
+        "budget" : "$5.31"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f117"),
+        "id" : 18,
+        "movie_name" : "Prodigal, The",
+        "movie_gener" : "Drama",
+        "production_year" : 2007,
+        "budget" : "$5.60"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f118"),
+        "id" : 19,
+        "movie_name" : "Woodsman, The",
+        "movie_gener" : "Drama",
+        "production_year" : 1994,
+        "budget" : "$2.30"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f11a"),
+        "id" : 21,
+        "movie_name" : "Disco Dancer",
+        "movie_gener" : "Action|Musical|Romance",
+        "production_year" : 2008,
+        "budget" : "$5.02"
+}
+Type "it" for more
+> db.moviesdata.find({budget:{$gt:$2}},{budget:{$gte:$10}})
+uncaught exception: ReferenceError: $2 is not defined :
+@(shell):1:29
+> db.moviesdata.find({budget:{$gt:"$4"}})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f109"), "id" : 4, "movie_name" : "Just Between Friends", "movie_gener" : "Drama", "production_year" : 1998, "budget" : "$9.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10d"), "id" : 8, "movie_name" : "Better Than Sex", "movie_gener" : "Comedy|Romance", "production_year" : 1994, "budget" : "$5.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10e"), "id" : 9, "movie_name" : "Exists", "movie_gener" : "Horror", "production_year" : 1993, "budget" : "$8.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10f"), "id" : 10, "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)", "movie_gener" : "Comedy|Drama", "production_year" : 1996, "budget" : "$9.55" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f111"), "id" : 12, "movie_name" : "Submarino", "movie_gener" : "Drama", "production_year" : 2012, "budget" : "$6.04" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f113"), "id" : 14, "movie_name" : "Don't Look Back", "movie_gener" : "Documentary|Musical", "production_year" : 1987, "budget" : "$4.81" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f115"), "id" : 16, "movie_name" : "Dead Tired (Grosse Fatigue)", "movie_gener" : "Comedy", "production_year" : 1998, "budget" : "$9.36" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11a"), "id" : 21, "movie_name" : "Disco Dancer", "movie_gener" : "Action|Musical|Romance", "production_year" : 2008, "budget" : "$5.02" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11c"), "id" : 23, "movie_name" : "Godzilla: Tokyo S.O.S. (Gojira tai Mosura tai Mekagojira: Tôkyô S.O.S.)", "movie_gener" : "Action|Fantasy|Sci-Fi", "production_year" : 2009, "budget" : "$8.66" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11e"), "id" : 25, "movie_name" : "Ghost Rider: Spirit of Vengeance", "movie_gener" : "Action|Fantasy|Thriller", "production_year" : 2012, "budget" : "$5.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11f"), "id" : 26, "movie_name" : "Ten Seconds to Hell", "movie_gener" : "Action|Drama|Romance|War", "production_year" : 2009, "budget" : "$5.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f122"), "id" : 29, "movie_name" : "Rugrats Go Wild!", "movie_gener" : "Adventure|Animation|Children|Comedy", "production_year" : 2007, "budget" : "$6.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f123"), "id" : 30, "movie_name" : "Fire in Castilla (Tactilvision from the Moor of the Fright)", "movie_gener" : "Documentary", "production_year" : 1987, "budget" : "$8.46" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f124"), "id" : 31, "movie_name" : "Northanger Abbey", "movie_gener" : "Drama|Romance", "production_year" : 2002, "budget" : "$4.79" }
+Type "it" for more
+> db.moviesdata.find({budget:{$gte:"$2"}})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f107"), "id" : 2, "movie_name" : "Decline of Western Civilization, The", "movie_gener" : "Documentary|Musical", "production_year" : 1973, "budget" : "$2.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f109"), "id" : 4, "movie_name" : "Just Between Friends", "movie_gener" : "Drama", "production_year" : 1998, "budget" : "$9.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10d"), "id" : 8, "movie_name" : "Better Than Sex", "movie_gener" : "Comedy|Romance", "production_year" : 1994, "budget" : "$5.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10e"), "id" : 9, "movie_name" : "Exists", "movie_gener" : "Horror", "production_year" : 1993, "budget" : "$8.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10f"), "id" : 10, "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)", "movie_gener" : "Comedy|Drama", "production_year" : 1996, "budget" : "$9.55" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f111"), "id" : 12, "movie_name" : "Submarino", "movie_gener" : "Drama", "production_year" : 2012, "budget" : "$6.04" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f112"), "id" : 13, "movie_name" : "Blood River", "movie_gener" : "Horror|Thriller|Western", "production_year" : 2011, "budget" : "$3.95" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f113"), "id" : 14, "movie_name" : "Don't Look Back", "movie_gener" : "Documentary|Musical", "production_year" : 1987, "budget" : "$4.81" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f115"), "id" : 16, "movie_name" : "Dead Tired (Grosse Fatigue)", "movie_gener" : "Comedy", "production_year" : 1998, "budget" : "$9.36" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f118"), "id" : 19, "movie_name" : "Woodsman, The", "movie_gener" : "Drama", "production_year" : 1994, "budget" : "$2.30" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11a"), "id" : 21, "movie_name" : "Disco Dancer", "movie_gener" : "Action|Musical|Romance", "production_year" : 2008, "budget" : "$5.02" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11b"), "id" : 22, "movie_name" : "Spooky House", "movie_gener" : "Children", "production_year" : 2004, "budget" : "$3.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11c"), "id" : 23, "movie_name" : "Godzilla: Tokyo S.O.S. (Gojira tai Mosura tai Mekagojira: Tôkyô S.O.S.)", "movie_gener" : "Action|Fantasy|Sci-Fi", "production_year" : 2009, "budget" : "$8.66" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11e"), "id" : 25, "movie_name" : "Ghost Rider: Spirit of Vengeance", "movie_gener" : "Action|Fantasy|Thriller", "production_year" : 2012, "budget" : "$5.06" }
+Type "it" for more
+> db.moviesdata.find({budget:{$lte:"$5"}})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f107"), "id" : 2, "movie_name" : "Decline of Western Civilization, The", "movie_gener" : "Documentary|Musical", "production_year" : 1973, "budget" : "$2.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f108"), "id" : 3, "movie_name" : "Rock Star", "movie_gener" : "Comedy|Drama|Musical", "production_year" : 2008, "budget" : "$1.22" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10a"), "id" : 5, "movie_name" : "Burmese Harp, The (Biruma no tategoto)", "movie_gener" : "Drama|War", "production_year" : 2000, "budget" : "$1.58" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10c"), "id" : 7, "movie_name" : "Winning Team, The", "movie_gener" : "Drama|Romance", "production_year" : 1995, "budget" : "$1.61" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f112"), "id" : 13, "movie_name" : "Blood River", "movie_gener" : "Horror|Thriller|Western", "production_year" : 2011, "budget" : "$3.95" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f113"), "id" : 14, "movie_name" : "Don't Look Back", "movie_gener" : "Documentary|Musical", "production_year" : 1987, "budget" : "$4.81" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f118"), "id" : 19, "movie_name" : "Woodsman, The", "movie_gener" : "Drama", "production_year" : 1994, "budget" : "$2.30" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f119"), "id" : 20, "movie_name" : "Das Lied in mir", "movie_gener" : "Drama", "production_year" : 2002, "budget" : "$0.45" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11b"), "id" : 22, "movie_name" : "Spooky House", "movie_gener" : "Children", "production_year" : 2004, "budget" : "$3.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11d"), "id" : 24, "movie_name" : "Sicily! (Sicilia!)", "movie_gener" : "Drama", "production_year" : 2010, "budget" : "$0.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f120"), "id" : 27, "movie_name" : "Ladies vs. Ricky Bahl", "movie_gener" : "Comedy|Drama", "production_year" : 1990, "budget" : "$1.24" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f121"), "id" : 28, "movie_name" : "Indiscretion of an American Wife (a.k.a. Terminal Station) (Stazione Termini)", "movie_gener" : "Drama", "production_year" : 2001, "budget" : "$0.91" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f124"), "id" : 31, "movie_name" : "Northanger Abbey", "movie_gener" : "Drama|Romance", "production_year" : 2002, "budget" : "$4.79" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f129"), "id" : 36, "movie_name" : "La Première étoile", "movie_gener" : "Comedy", "production_year" : 1972, "budget" : "$2.35" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12b"), "id" : 38, "movie_name" : "O Brother, Where Art Thou?", "movie_gener" : "Adventure|Comedy|Crime", "production_year" : 1994, "budget" : "$2.96" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12c"), "id" : 39, "movie_name" : "Ten Minutes Older: The Cello", "movie_gener" : "Drama|Musical|Romance|Sci-Fi", "production_year" : 2006, "budget" : "$0.99" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12d"), "id" : 40, "movie_name" : "Dead Silence", "movie_gener" : "Action|Drama|Thriller", "production_year" : 1999, "budget" : "$1.26" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12e"), "id" : 41, "movie_name" : "Serial (Bad) Weddings (Qu'est-ce Qu'on An Fit Au Bon Dieu?)", "movie_gener" : "Comedy|Romance", "production_year" : 1994, "budget" : "$1.61" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12f"), "id" : 42, "movie_name" : "Bionicle: Mask of Light (Bionicle: Mask of Light - The Movie)", "movie_gener" : "Action|Adventure|Animation|Children|Fantasy", "production_year" : 2002, "budget" : "$1.44" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f130"), "id" : 43, "movie_name" : "Eggs", "movie_gener" : "Comedy|Drama", "production_year" : 2002, "budget" : "$0.94" }
+Type "it" for more
+> db.movies.find({production_year:{$gt:2000}},{budget:{$gt:"$2"}})
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "Expression $gt takes exactly 2 arguments. 1 were passed in.",
+        "code" : 16020,
+        "codeName" : "Location16020"
+}
+> db.moviesdata.find({production_year:{$gt:2000}},{budget:{$gt:"$2"}})
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "Expression $gt takes exactly 2 arguments. 1 were passed in.",
+        "code" : 16020,
+        "codeName" : "Location16020"
+}
+> db.moviesdata.find({$and:[{production_year:{%gt:2000}},{budget:{$gt:"$2"}}]}).pretty()
+uncaught exception: SyntaxError: expected property name, got '%' :
+@(shell):1:44
+> db.moviesdata.find({$and:[{$and:[{production_year:{$gt:2000}},{budget:{$gt:"$2"}}]}).pretty()
+... db.moviesdata.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:"$2"}}]})
+...
+...
+> db.moviesdata.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:"$2"}}]}]
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:76
+> db.moviesdata.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:"$2"}}]})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f111"), "id" : 12, "movie_name" : "Submarino", "movie_gener" : "Drama", "production_year" : 2012, "budget" : "$6.04" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f112"), "id" : 13, "movie_name" : "Blood River", "movie_gener" : "Horror|Thriller|Western", "production_year" : 2011, "budget" : "$3.95" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11a"), "id" : 21, "movie_name" : "Disco Dancer", "movie_gener" : "Action|Musical|Romance", "production_year" : 2008, "budget" : "$5.02" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11b"), "id" : 22, "movie_name" : "Spooky House", "movie_gener" : "Children", "production_year" : 2004, "budget" : "$3.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11c"), "id" : 23, "movie_name" : "Godzilla: Tokyo S.O.S. (Gojira tai Mosura tai Mekagojira: Tôkyô S.O.S.)", "movie_gener" : "Action|Fantasy|Sci-Fi", "production_year" : 2009, "budget" : "$8.66" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11e"), "id" : 25, "movie_name" : "Ghost Rider: Spirit of Vengeance", "movie_gener" : "Action|Fantasy|Thriller", "production_year" : 2012, "budget" : "$5.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11f"), "id" : 26, "movie_name" : "Ten Seconds to Hell", "movie_gener" : "Action|Drama|Romance|War", "production_year" : 2009, "budget" : "$5.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f122"), "id" : 29, "movie_name" : "Rugrats Go Wild!", "movie_gener" : "Adventure|Animation|Children|Comedy", "production_year" : 2007, "budget" : "$6.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f124"), "id" : 31, "movie_name" : "Northanger Abbey", "movie_gener" : "Drama|Romance", "production_year" : 2002, "budget" : "$4.79" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f128"), "id" : 35, "movie_name" : "Velvet Goldmine", "movie_gener" : "Drama", "production_year" : 2008, "budget" : "$9.10" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f131"), "id" : 44, "movie_name" : "Spirit: Stallion of the Cimarron", "movie_gener" : "Adventure|Animation|Children|Western", "production_year" : 2009, "budget" : "$7.29" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f135"), "id" : 48, "movie_name" : "Ugetsu (Ugetsu monogatari)", "movie_gener" : "Drama|Thriller", "production_year" : 2007, "budget" : "$2.42" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f139"), "id" : 52, "movie_name" : "Journey of Natty Gann, The", "movie_gener" : "Adventure|Children", "production_year" : 2004, "budget" : "$7.08" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f13c"), "id" : 55, "movie_name" : "All for the Winner (Dou sing)", "movie_gener" : "Action|Comedy", "production_year" : 2012, "budget" : "$9.63" }
+Type "it" for more
+> db.moviesdata.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:"$2"}}]})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f107"), "id" : 2, "movie_name" : "Decline of Western Civilization, The", "movie_gener" : "Documentary|Musical", "production_year" : 1973, "budget" : "$2.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f108"), "id" : 3, "movie_name" : "Rock Star", "movie_gener" : "Comedy|Drama|Musical", "production_year" : 2008, "budget" : "$1.22" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f109"), "id" : 4, "movie_name" : "Just Between Friends", "movie_gener" : "Drama", "production_year" : 1998, "budget" : "$9.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10d"), "id" : 8, "movie_name" : "Better Than Sex", "movie_gener" : "Comedy|Romance", "production_year" : 1994, "budget" : "$5.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10e"), "id" : 9, "movie_name" : "Exists", "movie_gener" : "Horror", "production_year" : 1993, "budget" : "$8.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10f"), "id" : 10, "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)", "movie_gener" : "Comedy|Drama", "production_year" : 1996, "budget" : "$9.55" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f111"), "id" : 12, "movie_name" : "Submarino", "movie_gener" : "Drama", "production_year" : 2012, "budget" : "$6.04" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f112"), "id" : 13, "movie_name" : "Blood River", "movie_gener" : "Horror|Thriller|Western", "production_year" : 2011, "budget" : "$3.95" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f113"), "id" : 14, "movie_name" : "Don't Look Back", "movie_gener" : "Documentary|Musical", "production_year" : 1987, "budget" : "$4.81" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f115"), "id" : 16, "movie_name" : "Dead Tired (Grosse Fatigue)", "movie_gener" : "Comedy", "production_year" : 1998, "budget" : "$9.36" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f118"), "id" : 19, "movie_name" : "Woodsman, The", "movie_gener" : "Drama", "production_year" : 1994, "budget" : "$2.30" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f119"), "id" : 20, "movie_name" : "Das Lied in mir", "movie_gener" : "Drama", "production_year" : 2002, "budget" : "$0.45" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11a"), "id" : 21, "movie_name" : "Disco Dancer", "movie_gener" : "Action|Musical|Romance", "production_year" : 2008, "budget" : "$5.02" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11b"), "id" : 22, "movie_name" : "Spooky House", "movie_gener" : "Children", "production_year" : 2004, "budget" : "$3.06" }
+Type "it" for more
+> db.moviesdata.find({$nor:[{production_year:2000},{budget:"$2"}]})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f107"), "id" : 2, "movie_name" : "Decline of Western Civilization, The", "movie_gener" : "Documentary|Musical", "production_year" : 1973, "budget" : "$2.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f108"), "id" : 3, "movie_name" : "Rock Star", "movie_gener" : "Comedy|Drama|Musical", "production_year" : 2008, "budget" : "$1.22" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f109"), "id" : 4, "movie_name" : "Just Between Friends", "movie_gener" : "Drama", "production_year" : 1998, "budget" : "$9.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10c"), "id" : 7, "movie_name" : "Winning Team, The", "movie_gener" : "Drama|Romance", "production_year" : 1995, "budget" : "$1.61" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10d"), "id" : 8, "movie_name" : "Better Than Sex", "movie_gener" : "Comedy|Romance", "production_year" : 1994, "budget" : "$5.37" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10e"), "id" : 9, "movie_name" : "Exists", "movie_gener" : "Horror", "production_year" : 1993, "budget" : "$8.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10f"), "id" : 10, "movie_name" : "Girl From Paris, A (hirondelle a fait le printemps, Une)", "movie_gener" : "Comedy|Drama", "production_year" : 1996, "budget" : "$9.55" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f111"), "id" : 12, "movie_name" : "Submarino", "movie_gener" : "Drama", "production_year" : 2012, "budget" : "$6.04" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f112"), "id" : 13, "movie_name" : "Blood River", "movie_gener" : "Horror|Thriller|Western", "production_year" : 2011, "budget" : "$3.95" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f113"), "id" : 14, "movie_name" : "Don't Look Back", "movie_gener" : "Documentary|Musical", "production_year" : 1987, "budget" : "$4.81" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f115"), "id" : 16, "movie_name" : "Dead Tired (Grosse Fatigue)", "movie_gener" : "Comedy", "production_year" : 1998, "budget" : "$9.36" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f118"), "id" : 19, "movie_name" : "Woodsman, The", "movie_gener" : "Drama", "production_year" : 1994, "budget" : "$2.30" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f119"), "id" : 20, "movie_name" : "Das Lied in mir", "movie_gener" : "Drama", "production_year" : 2002, "budget" : "$0.45" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11a"), "id" : 21, "movie_name" : "Disco Dancer", "movie_gener" : "Action|Musical|Romance", "production_year" : 2008, "budget" : "$5.02" }
+Type "it" for more
+> db.moviesdata.find({$and:[{production_year:{$gt:2000}},{production_year:{$lte:2010}}]})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f106"), "id" : 1, "movie_name" : "No Greater Love", "movie_gener" : "Drama|Romance", "production_year" : 2010, "budget" : "$8.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f108"), "id" : 3, "movie_name" : "Rock Star", "movie_gener" : "Comedy|Drama|Musical", "production_year" : 2008, "budget" : "$1.22" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f10b"), "id" : 6, "movie_name" : "Jug Face", "movie_gener" : "Horror", "production_year" : 2008, "budget" : "$5.25" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f110"), "id" : 11, "movie_name" : "End of Poverty, The", "movie_gener" : "Documentary", "production_year" : 2008, "budget" : "$7.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f114"), "id" : 15, "movie_name" : "Jim Jefferies: BARE", "movie_gener" : "Comedy", "production_year" : 2010, "budget" : "$5.59" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f116"), "id" : 17, "movie_name" : "Armed and Dangerous", "movie_gener" : "Comedy|Crime", "production_year" : 2004, "budget" : "$5.31" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f117"), "id" : 18, "movie_name" : "Prodigal, The", "movie_gener" : "Drama", "production_year" : 2007, "budget" : "$5.60" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f119"), "id" : 20, "movie_name" : "Das Lied in mir", "movie_gener" : "Drama", "production_year" : 2002, "budget" : "$0.45" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11a"), "id" : 21, "movie_name" : "Disco Dancer", "movie_gener" : "Action|Musical|Romance", "production_year" : 2008, "budget" : "$5.02" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11b"), "id" : 22, "movie_name" : "Spooky House", "movie_gener" : "Children", "production_year" : 2004, "budget" : "$3.06" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11c"), "id" : 23, "movie_name" : "Godzilla: Tokyo S.O.S. (Gojira tai Mosura tai Mekagojira: Tôkyô S.O.S.)", "movie_gener" : "Action|Fantasy|Sci-Fi", "production_year" : 2009, "budget" : "$8.66" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11d"), "id" : 24, "movie_name" : "Sicily! (Sicilia!)", "movie_gener" : "Drama", "production_year" : 2010, "budget" : "$0.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f11f"), "id" : 26, "movie_name" : "Ten Seconds to Hell", "movie_gener" : "Action|Drama|Romance|War", "production_year" : 2009, "budget" : "$5.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f121"), "id" : 28, "movie_name" : "Indiscretion of an American Wife (a.k.a. Terminal Station) (Stazione Termini)", "movie_gener" : "Drama", "production_year" : 2001, "budget" : "$0.91" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f122"), "id" : 29, "movie_name" : "Rugrats Go Wild!", "movie_gener" : "Adventure|Animation|Children|Comedy", "production_year" : 2007, "budget" : "$6.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f124"), "id" : 31, "movie_name" : "Northanger Abbey", "movie_gener" : "Drama|Romance", "production_year" : 2002, "budget" : "$4.79" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f128"), "id" : 35, "movie_name" : "Velvet Goldmine", "movie_gener" : "Drama", "production_year" : 2008, "budget" : "$9.10" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12c"), "id" : 39, "movie_name" : "Ten Minutes Older: The Cello", "movie_gener" : "Drama|Musical|Romance|Sci-Fi", "production_year" : 2006, "budget" : "$0.99" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f12f"), "id" : 42, "movie_name" : "Bionicle: Mask of Light (Bionicle: Mask of Light - The Movie)", "movie_gener" : "Action|Adventure|Animation|Children|Fantasy", "production_year" : 2002, "budget" : "$1.44" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f130"), "id" : 43, "movie_name" : "Eggs", "movie_gener" : "Comedy|Drama", "production_year" : 2002, "budget" : "$0.94" }
+Type "it" for more
+> db.moviesdata.find({}).sort({production_year:1,movie_name:1})
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f2af"), "id" : 426, "movie_name" : "Dead Silent", "movie_gener" : "Thriller", "production_year" : 1909, "budget" : "$6.57" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f201"), "id" : 252, "movie_name" : "Forgotten Silver", "movie_gener" : "Comedy|Documentary", "production_year" : 1953, "budget" : "$5.22" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f2b1"), "id" : 428, "movie_name" : "Bears", "movie_gener" : "Documentary", "production_year" : 1956, "budget" : "$4.76" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f175"), "id" : 112, "movie_name" : "Hara-Kiri: Death of a Samurai", "movie_gener" : "Drama", "production_year" : 1956, "budget" : "$3.94" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f21e"), "id" : 281, "movie_name" : "In the Soup", "movie_gener" : "Comedy|Drama", "production_year" : 1963, "budget" : "$0.88" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f18f"), "id" : 138, "movie_name" : "Dilemma, The", "movie_gener" : "Comedy|Drama", "production_year" : 1964, "budget" : "$4.33" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f1bd"), "id" : 184, "movie_name" : "Phantom Lover, The (Ye ban ge sheng)", "movie_gener" : "Drama|Mystery|Romance", "production_year" : 1967, "budget" : "$9.13" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f228"), "id" : 291, "movie_name" : "Safe House", "movie_gener" : "Action|Crime|Mystery|Thriller", "production_year" : 1967, "budget" : "$4.34" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f264"), "id" : 351, "movie_name" : "Flicker (Flimmer)", "movie_gener" : "Comedy|Drama", "production_year" : 1971, "budget" : "$2.51" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f2c7"), "id" : 450, "movie_name" : "Beauty Is Embarrassing", "movie_gener" : "Documentary", "production_year" : 1972, "budget" : "$1.83" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f129"), "id" : 36, "movie_name" : "La Première étoile", "movie_gener" : "Comedy", "production_year" : 1972, "budget" : "$2.35" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f107"), "id" : 2, "movie_name" : "Decline of Western Civilization, The", "movie_gener" : "Documentary|Musical", "production_year" : 1973, "budget" : "$2.07" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f1fc"), "id" : 247, "movie_name" : "Sophie's World (Sofies verden)", "movie_gener" : "Adventure|Drama|Fantasy", "production_year" : 1978, "budget" : "$4.96" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f20e"), "id" : 265, "movie_name" : "Virginity Hit, The", "movie_gener" : "Comedy", "production_year" : 1980, "budget" : "$2.26" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f198"), "id" : 147, "movie_name" : "Cove, The", "movie_gener" : "Documentary", "production_year" : 1983, "budget" : "$7.45" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f1ae"), "id" : 169, "movie_name" : "Before Sunset", "movie_gener" : "Drama|Romance", "production_year" : 1984, "budget" : "$0.76" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f1ca"), "id" : 197, "movie_name" : "Beau Pere (a.k.a. Stepfather) (Beau-père)", "movie_gener" : "Drama", "production_year" : 1985, "budget" : "$2.79" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f267"), "id" : 354, "movie_name" : "Corporation, The", "movie_gener" : "Documentary", "production_year" : 1985, "budget" : "$5.17" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f229"), "id" : 292, "movie_name" : "Sweet November", "movie_gener" : "Drama|Romance", "production_year" : 1985, "budget" : "$6.54" }
+{ "_id" : ObjectId("6228a5a047be42b1c2f0f2de"), "id" : 473, "movie_name" : "Symphonie pastorale, La", "movie_gener" : "Drama", "production_year" : 1985, "budget" : "$7.87" }
+Type "it" for more
+> db.moviesdata.find({}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f110"),
+        "id" : 11,
+        "movie_name" : "End of Poverty, The",
+        "movie_gener" : "Documentary",
+        "production_year" : 2008,
+        "budget" : "$7.06"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f111"),
+        "id" : 12,
+        "movie_name" : "Submarino",
+        "movie_gener" : "Drama",
+        "production_year" : 2012,
+        "budget" : "$6.04"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f112"),
+        "id" : 13,
+        "movie_name" : "Blood River",
+        "movie_gener" : "Horror|Thriller|Western",
+        "production_year" : 2011,
+        "budget" : "$3.95"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f113"),
+        "id" : 14,
+        "movie_name" : "Don't Look Back",
+        "movie_gener" : "Documentary|Musical",
+        "production_year" : 1987,
+        "budget" : "$4.81"
+}
+{
+        "_id" : ObjectId("6228a5a047be42b1c2f0f114"),
+        "id" : 15,
+        "movie_name" : "Jim Jefferies: BARE",
+        "movie_gener" : "Comedy",
+        "production_year" : 2010,
+        "budget" : "$5.59"
+}
