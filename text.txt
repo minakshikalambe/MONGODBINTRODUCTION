@@ -1,0 +1,108 @@
+
+C:\Users\HP>mongo
+MongoDB shell version v4.4.13
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("80210a7b-edeb-435e-9078-ef3722184962") }
+MongoDB server version: 4.4.13
+---
+The server generated these startup warnings when booting:
+        2022-03-08T00:19:46.005+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use assignment
+switched to db assignment
+> db.createCollection("users")
+{ "ok" : 1 }
+> db.users.insert({"first_name":"Minakshi"})
+WriteResult({ "nInserted" : 1 })
+> db.users.find({})
+{ "_id" : ObjectId("622659f95423145c4a7eae91"), "first_name" : "Minakshi" }
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB
+> db.users.update({"name":"Minakshi"},{$set:{"last_name":"Kalambe","email":"minakshi@1996","gender":"Female","age":25}})
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> bd.users.find({})
+uncaught exception: ReferenceError: bd is not defined :
+@(shell):1:1
+> db.users.find({})
+{ "_id" : ObjectId("622659f95423145c4a7eae91"), "first_name" : "Minakshi" }
+> db.users.update({"first_name":"Minakshi"},{$set:{"last_name":"Kalambe","email":"minakshi@1996","gender":"Female","age":25}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({})
+{ "_id" : ObjectId("622659f95423145c4a7eae91"), "first_name" : "Minakshi", "age" : 25, "email" : "minakshi@1996", "gender" : "Female", "last_name" : "Kalambe" }
+> db.users.insertMany([{"first_name":"Shubham","last_name":"Pande","email":"shubham@1997","gender":"male","age":23"},{"first_name":"Ashish","last_name":"lonbale"}])
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:112
+> db.users.insertMany([{"first_name":"Shubham"},{"first_name":"ashish"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62265f0c5423145c4a7eae92"),
+                ObjectId("62265f0c5423145c4a7eae93")
+        ]
+}
+> db.users.updateMany({},{$set:{"country":"India"}})
+{ "acknowledged" : true, "matchedCount" : 3, "modifiedCount" : 3 }
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("622659f95423145c4a7eae91"),
+        "first_name" : "Minakshi",
+        "age" : 25,
+        "email" : "minakshi@1996",
+        "gender" : "Female",
+        "last_name" : "Kalambe",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("62265f0c5423145c4a7eae92"),
+        "first_name" : "Shubham",
+        "country" : "India"
+}
+{
+        "_id" : ObjectId("62265f0c5423145c4a7eae93"),
+        "first_name" : "ashish",
+        "country" : "India"
+}
+> db.users.find({"first_name":"Minakshi"}.pretty()
+...
+...
+>
+> db.users.find({"first_name":"Minakshi"}).pretty()
+{
+        "_id" : ObjectId("622659f95423145c4a7eae91"),
+        "first_name" : "Minakshi",
+        "age" : 25,
+        "email" : "minakshi@1996",
+        "gender" : "Female",
+        "last_name" : "Kalambe",
+        "country" : "India"
+}
+> db.users.update({"_id":ObjectId("62265f0c5423145c4a7eae92")},{"age":23})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.remove({"first_name":"ashish"})
+WriteResult({ "nRemoved" : 1 })
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB
+> db.users.find({})
+{ "_id" : ObjectId("622659f95423145c4a7eae91"), "first_name" : "Minakshi", "age" : 25, "email" : "minakshi@1996", "gender" : "Female", "last_name" : "Kalambe", "country" : "India" }
+{ "_id" : ObjectId("62265f0c5423145c4a7eae92"), "age" : 23 }
